@@ -67,7 +67,7 @@ def pairs_metrics_multi(method_names, stream_names, metrics, experiment_names, m
                                 # print("WIN", method_2, stream)
                             else:
                                 ranking[method_2]["lose"] += 1
-                                print("LOSE", method_2, stream)
+                                # print("LOSE", method_2, stream)
                         else:
                             ranking[method_2]["tie"] += 1
                             # print("TIE", method_2, stream)

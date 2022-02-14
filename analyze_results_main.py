@@ -100,18 +100,6 @@ directory = "real/"
 mypath = "results/raw_conf/mlp/%s" % directory
 streams += ["%s%s" % (directory, os.path.splitext(f)[0]) for f in os.listdir(mypath) if not os.path.isfile(os.path.join(mypath, f))]
 
-
-streams.append("real/1-2-3-4-5vsA_penbased")
-streams.append("real/1-5vsA_INSECTS-abrupt_imbalanced_norm")
-streams.append("real/1-5vsA_INSECTS-incremental-abrupt_imbalanced_norm")
-streams.append("real/1-5vsA_INSECTS-incremental_imbalanced_norm")
-streams.append("real/1vsA_shuttle")
-streams.append("real/2-5vsA_INSECTS-gradual_imbalanced_norm")
-streams.append("real/2vsA_covtypeNorm")
-streams.append("real/elecNormNew")
-streams.append("real/magic")
-streams.append("real/NOAA")
-
 stream_sets += [streams]
 streams_aliases += ["real"]
 
